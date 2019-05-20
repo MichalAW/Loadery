@@ -1,6 +1,7 @@
 import React from 'react';
 import uuid from 'uuid';
 import style from './App.css';
+import Title from './components/Title';
 
 class App extends React.Component {
     constructor(props) {
@@ -30,12 +31,22 @@ class App extends React.Component {
     }
 
     render() {
-    return (
-        <div className={style.TodoApp}>
-            Tutaj pojawią się komponenty naszej aplikacji.
-        </div>
-    );
-}
+        return (
+            <div>
+                <div className={style.Title}>
+                    <h1>Title</h1>
+                    <div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className={style.TodoApp}>
+                    // Components of our application will appear here.
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
