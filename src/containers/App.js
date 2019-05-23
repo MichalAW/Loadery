@@ -33,7 +33,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Title render="My Title"/>
+                <Title name="My Title"/>
                 <div className={style.TodoApp}>
                     // Components of our application will appear here.
                 </div>
