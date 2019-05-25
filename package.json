@@ -6,6 +6,7 @@
     "scripts": {
         "test:echo": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack",
+        "start-dev": "webpack-dev-server",
         "build": "webpack --production",
         "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore"
     },
