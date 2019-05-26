@@ -25,5 +25,16 @@ module.exports = {
                ]
            }
        ]
+    },
+    devServer: {
+        contentBase: './build',
+        publicPath: '/',
+        historyApiFallback: {
+            index: '/index.html'
+        },
+        port: 3000,
+        hot: true,
+        compress: false,
+        disableHostCheck: true,
     }
 };
