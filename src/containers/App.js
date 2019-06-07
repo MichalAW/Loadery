@@ -2,13 +2,26 @@ import React from 'react';
 import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title';
-import todoList from '../components/TodoList';
+import TodoList from '../components/TodoList';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [
+                {
+                    id: uuid.v4(),
+                    text: "123"
+                },
+                {
+                    id: uuid.v4(),
+                    text: "123"
+                },
+                {
+                    id: uuid.v4(),
+                    text: "123"
+                }
+            ]
         };
     }
 
@@ -34,9 +47,9 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Title name="My Title" todoListCount={todoList.length}/>
+                <Title name="My Title" todoListCount={this.state.data.length}/>
                 <div className={style.TodoApp}>
-                    // Components of our application will appear here.
+                    <TodoList data={this.state.data}></TodoList>
                 </div>
             </div>
         );
