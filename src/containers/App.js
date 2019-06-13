@@ -49,7 +49,7 @@ class App extends React.Component {
             <div>
                 <Title name="My Title" todoListCount={this.state.data.length}/>
                 <div className={style.TodoApp}>
-                    <TodoList data={this.state.data}></TodoList>
+                    <TodoList data={this.state.data}/>
                 </div>
             </div>
         );
