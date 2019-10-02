@@ -1,6 +1,6 @@
 # 20.4.Loadery
- Connection of Webpack with React, introduction to the Todo application
+ Connection of Webpack with React, first experience to the Todo application
 
-site -->https://michalaw.github.io/20.4.Loadery/
+site -->https://michalaw.github.io/Loadery/
 
-repo --> https://github.com/MichalAW/20.4.Loadery.git
+repo --> https://github.com/MichalAW/Loadery.git
